@@ -1,0 +1,1 @@
+g++   -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/TImeManagerComp.dir/TImeManagerComp.cpp.o CMakeFiles/TImeManagerComp.dir/TImeManager.cpp.o CMakeFiles/TImeManagerComp.dir/__/idl/ViveSK.cc.o CMakeFiles/TImeManagerComp.dir/__/idl/ViveDynSK.cc.o  -o TImeManagerComp -lomniORB4 -lomnithread -lomniDynamic4 -lRTC -lcoil 

@@ -1,0 +1,21 @@
+//ViveIDL.idl
+
+#include "BasicDataType.idl"
+
+module VIVE{
+	
+	struct viveData{
+		long deviceClass;
+		long deviceNum;
+		float posx;
+		float posy;
+		float posz;
+		float triger;
+	};
+
+	struct viveSequence{
+		RTC::Time tm;
+		sequence<viveData> seq;
+	};
+};
+

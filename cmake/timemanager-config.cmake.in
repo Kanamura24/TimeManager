@@ -1,0 +1,54 @@
+# TImeManager CMake config file
+#
+# This file sets the following variables:
+# TImeManager_FOUND - Always TRUE.
+# TImeManager_INCLUDE_DIRS - Directories containing the TImeManager include files.
+# TImeManager_IDL_DIRS - Directories containing the TImeManager IDL files.
+# TImeManager_LIBRARIES - Libraries needed to use TImeManager.
+# TImeManager_DEFINITIONS - Compiler flags for TImeManager.
+# TImeManager_VERSION - The version of TImeManager found.
+# TImeManager_VERSION_MAJOR - The major version of TImeManager found.
+# TImeManager_VERSION_MINOR - The minor version of TImeManager found.
+# TImeManager_VERSION_REVISION - The revision version of TImeManager found.
+# TImeManager_VERSION_CANDIDATE - The candidate version of TImeManager found.
+
+message(STATUS "Found TImeManager-@PROJECT_VERSION@")
+set(TImeManager_FOUND TRUE)
+
+find_package(<dependency> REQUIRED)
+
+#set(TImeManager_INCLUDE_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@"
+#    ${<dependency>_INCLUDE_DIRS}
+#    )
+#
+#set(TImeManager_IDL_DIRS
+#    "@CMAKE_INSTALL_PREFIX@/include/@PROJECT_NAME_LOWER@-@PROJECT_VERSION_MAJOR@/idl")
+set(TImeManager_INCLUDE_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@"
+    ${<dependency>_INCLUDE_DIRS}
+    )
+set(TImeManager_IDL_DIRS
+    "@CMAKE_INSTALL_PREFIX@/include/@CPACK_PACKAGE_FILE_NAME@/idl")
+
+
+if(WIN32)
+    set(TImeManager_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_STATIC_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+else(WIN32)
+    set(TImeManager_LIBRARIES
+        "@CMAKE_INSTALL_PREFIX@/@LIB_INSTALL_DIR@/@CMAKE_SHARED_LIBRARY_PREFIX@@PROJECT_NAME_LOWER@@CMAKE_SHARED_LIBRARY_SUFFIX@"
+        ${<dependency>_LIBRARIES}
+        )
+endif(WIN32)
+
+set(TImeManager_DEFINITIONS ${<dependency>_DEFINITIONS})
+
+set(TImeManager_VERSION @PROJECT_VERSION@)
+set(TImeManager_VERSION_MAJOR @PROJECT_VERSION_MAJOR@)
+set(TImeManager_VERSION_MINOR @PROJECT_VERSION_MINOR@)
+set(TImeManager_VERSION_REVISION @PROJECT_VERSION_REVISION@)
+set(TImeManager_VERSION_CANDIDATE @PROJECT_VERSION_CANDIDATE@)
+

@@ -1,0 +1,16 @@
+[0m[34mAug 03 00:47:25.472 INFO: manager: [0m1.1.2
+[0m[34mAug 03 00:47:25.473 INFO: manager: [0mCopyright (C) 2003-2014
+[0m[34mAug 03 00:47:25.473 INFO: manager: [0m  Noriaki Ando
+[0m[34mAug 03 00:47:25.473 INFO: manager: [0m  Intelligent Systems Research Institute, AIST
+[0m[34mAug 03 00:47:25.473 INFO: manager: [0mManager starting.
+[0m[34mAug 03 00:47:25.473 INFO: manager: [0mStarting local logging.
+[0m[33mAug 03 00:47:25.487 WARNING: NamingOnCorba: [0mNo endpoint for the CORBA naming service (localhost) was found.
+[0m[34mAug 03 00:47:25.487 INFO: NamingManager: [0mNameServer connection succeeded: corba/localhost
+[0m[34mAug 03 00:47:25.489 INFO: ManagerServant: [0mMaster manager not found
+[0m[33mAug 03 00:47:33.412 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: 
+[0m[33mAug 03 00:47:33.413 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+[0m[33mAug 03 01:23:51.723 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: 
+[0m[33mAug 03 01:23:51.729 WARNING: SdoServiceAdmin: [0mNo available SDO service in the factory: IDL:OpenRTM/ComponentObserver:1.0
+[0m[33mAug 03 01:28:36.394 WARNING: startTrigger: [0mDead connection: 6d7c9915-51dd-4312-b719-9186f74b90c2
+[0m[33mAug 03 01:29:04.743 WARNING: startTrigger: [0mException caught: minor code(1096024066).
+[0m[33mAug 03 01:29:04.974 WARNING: startTrigger: [0mDead connection: 6d7c9915-51dd-4312-b719-9186f74b90c2

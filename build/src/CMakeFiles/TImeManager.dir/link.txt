@@ -1,0 +1,1 @@
+g++  -dynamiclib -Wl,-headerpad_max_install_names  -o TImeManager.dylib -install_name @rpath/TImeManager.dylib CMakeFiles/TImeManager.dir/TImeManager.cpp.o CMakeFiles/TImeManager.dir/__/idl/ViveSK.cc.o CMakeFiles/TImeManager.dir/__/idl/ViveDynSK.cc.o -lomniORB4 -lomnithread -lomniDynamic4 -lRTC -lcoil 
